@@ -26,12 +26,13 @@ A marketplace for buying/selling NFTs using Ethereum.
 * `buyNFT()` -> Allows any user to purchase the listed NFTs.
 * `cancelList()` -> Allows the owner of a listed NFT to cancel the sale of the NFT at any time.
 ## Testing functions ⌨️
-* `testMintNFT()` ->
-* `testShouldRevertIfPriceIsZero()` ->
-* `testShouldRevertIfNotOwner()` ->
-* `testListNFTCorrectly()` ->
-* `testCancelListShouldWorkCorrectly()` ->
-* `testCanNotBuyUnlistedNFT()` ->
-* `testCanNotBuyWithIncorrectPay()` ->
-* `testShouldBuyNFTCorrectly()` ->
+* `testMintNFT()` -> Verify that the NFT has been correctly minted to the user to perform the tests.
+* `testShouldRevertIfPriceIsZero()` -> The test reverts if the price of the NFT to be listed is 0.
+* `testShouldRevertIfNotOwner()` -> The test reverts if a user tries to list an NFT they do not own.
+* `testListNFTCorrectly()` -> Verify that the user correctly lists the NFT.
+* `testCancelListShouldRevertIfNotOwner()` -> The test reverts if a user tries to cancel the sale of an NFT they do not own.
+* `testCancelListShouldWorkCorrectly()` -> Verifies that a user can successfully cancel a listed NFT they own.
+* `testCanNotBuyUnlistedNFT()` -> The test should revert if you try to buy an NFT that is not listed by a user.
+* `testCanNotBuyWithIncorrectPay()` -> The test reverts if a user attempts to purchase an NFT with an amount different from the price. It must be the exact same amount of Ether as the price of the NFT.
+* `testShouldBuyNFTCorrectly()` -> Verify that any user can successfully purchase an NFT.
 
