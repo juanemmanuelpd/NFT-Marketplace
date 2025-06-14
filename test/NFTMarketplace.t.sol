@@ -74,7 +74,7 @@ contract NFTMarketplaceTest is Test {
         vm.stopPrank();
     }
     
-    function testListShouldRevertIfNotOwner() public {
+    function testCancelListShouldRevertIfNotOwner() public {
         vm.startPrank(user);
         (address sellerBefore,,,) = marketplaceTesting.listing(address(mockNFTTesting), tokenId);
         marketplaceTesting.listNFT(address(mockNFTTesting), tokenId, 1);
