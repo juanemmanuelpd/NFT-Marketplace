@@ -36,3 +36,4 @@ A marketplace for buying/selling NFTs using Ethereum.
 * `testCanNotBuyWithIncorrectPay()` -> The test reverts if a user attempts to purchase an NFT with an amount different from the price. It must be the exact same amount of Ether as the price of the NFT.
 * `testShouldBuyNFTCorrectly()` -> Verify that any user can successfully purchase an NFT.
 
+CODE IS LAW!
