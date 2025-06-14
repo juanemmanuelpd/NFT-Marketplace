@@ -20,4 +20,8 @@ A marketplace for buying/selling NFTs using Ethereum.
 7. Run the `forge build` command to compile the script.
 8. In the project navigation bar, open the "NFTMarketplace.t.sol" file located in the "test" folder.
 9. Run the command `forge test --match-test` followed by the name of a test function to test it and verify the smart contract functions are working correctly. For example, run `forge test --match-test testMintNFT -vvvv` to test the `testMintNFT` function.
-10. Run `forge coverage` to generate a code coverage report, which allows you to verify which parts of the "stakingApp.sol" and "stakingToken.sol" scripts code (in the "src" folder) are executed by the tests. This helps identify areas outside the coverage that could be exposed to errors/vulnerabilities.
+10. Run `forge coverage` to generate a code coverage report, which allows you to verify which parts of the "NFTMarketplace.sol" script code (in the "src" folder) are executed by the tests. This helps identify areas outside the coverage that could be exposed to errors/vulnerabilities.
+## Functions 
+* `listNFT()` -> Puts an NFT up for sale using the parameters seller, nftaddress, tokenId, and price
+* `buyNFT()` -> Allows any user to purchase the listed NFTs.
+* `cancelList()` -> Allows the owner of a listed NFT to cancel the sale of the NFT at any time.
