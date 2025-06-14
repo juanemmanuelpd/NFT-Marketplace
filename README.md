@@ -25,3 +25,13 @@ A marketplace for buying/selling NFTs using Ethereum.
 * `listNFT()` -> Puts an NFT up for sale using the parameters seller, nftaddress, tokenId, and price
 * `buyNFT()` -> Allows any user to purchase the listed NFTs.
 * `cancelList()` -> Allows the owner of a listed NFT to cancel the sale of the NFT at any time.
+## Testing functions ⌨️
+* `testMintNFT()` ->
+* `testShouldRevertIfPriceIsZero()` ->
+* `testShouldRevertIfNotOwner()` ->
+* `testListNFTCorrectly()` ->
+* `testCancelListShouldWorkCorrectly()` ->
+* `testCanNotBuyUnlistedNFT()` ->
+* `testCanNotBuyWithIncorrectPay()` ->
+* `testShouldBuyNFTCorrectly()` ->
+
